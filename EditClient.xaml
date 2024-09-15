@@ -1,0 +1,49 @@
+﻿<Window x:Class="Charity2.EditClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Charity2"
+        mc:Ignorable="d"
+        Title="EditClient" Height="500" Width="650">
+    <Grid>
+        <Image x:Name="imgBackground" HorizontalAlignment="Center" Height="493" VerticalAlignment="Top" Width="644" Source="/Charity-job-opportunities-in-Belfast-300x200.jpg" Opacity="0.1" Margin="0,27,0,0"/>
+        <TextBlock x:Name="txbEditClient" HorizontalAlignment="Left" Margin="60,5,0,0" TextWrapping="Wrap" Text="Edit Client" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txbName" HorizontalAlignment="Left" Height="20" Margin="60,83,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbPhoneNUmber" HorizontalAlignment="Left" Height="20" Margin="60,107,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbEmail" HorizontalAlignment="Left" Height="20" Margin="60,131,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbJobPreference" HorizontalAlignment="Left" Height="20" Margin="60,155,0,0" TextWrapping="Wrap" Text="Job Preference" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbAddress" HorizontalAlignment="Left" Height="20" Margin="60,179,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbPostCode" HorizontalAlignment="Left" Height="20" Margin="60,258,0,0" TextWrapping="Wrap" Text="Postal Code" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbQualification" HorizontalAlignment="Left" Height="20" Margin="60,281,0,0" TextWrapping="Wrap" Text="Qualifications" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbExperience" HorizontalAlignment="Left" Height="20" Margin="60,358,0,0" TextWrapping="Wrap" Text="Experience" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="txtQualification" HorizontalAlignment="Left" Height="49" Margin="60,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtExperience" HorizontalAlignment="Left" Height="49" Margin="60,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <ComboBox x:Name="combobJobs" HorizontalAlignment="Left" Height="20" Margin="181,158,0,0" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="20" Margin="181,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="20" Margin="181,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="20" Margin="181,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtPostCode" HorizontalAlignment="Left" Height="20" Margin="181,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBlock x:Name="txbDrivingLicence" HorizontalAlignment="Left" Height="20" Margin="355,83,0,0" TextWrapping="Wrap" Text="Driving Licence" VerticalAlignment="Top" Width="116"/>
+        <CheckBox x:Name="checkbYesDrive" Content="Yes" HorizontalAlignment="Left" Height="20" Margin="500,83,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkbNoDrive" Content="No" HorizontalAlignment="Left" Height="20" Margin="556,83,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbCriminalRecord" HorizontalAlignment="Left" Height="20" Margin="355,108,0,0" TextWrapping="Wrap" Text="Criminal Record" VerticalAlignment="Top" Width="116"/>
+        <CheckBox x:Name="checkbYesCriminal" Content="Yes" HorizontalAlignment="Left" Height="20" Margin="500,108,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkbNoCriminal" Content="No" HorizontalAlignment="Left" Height="20" Margin="556,108,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbTravelDistance" HorizontalAlignment="Left" Height="20" Margin="355,215,0,0" TextWrapping="Wrap" Text="Travel Distance" VerticalAlignment="Top" Width="116"/>
+        <ComboBox x:Name="combobTravel" HorizontalAlignment="Left" Height="20" Margin="463,212,0,0" VerticalAlignment="Top" Width="129"/>
+        <TextBlock x:Name="txbCriminalDetails" HorizontalAlignment="Left" Height="20" Margin="355,131,0,0" TextWrapping="Wrap" Text="Details" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="txtCriminalDetails" HorizontalAlignment="Left" Height="49" Margin="355,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="txtUploadCV" HorizontalAlignment="Left" Height="49" Margin="355,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Text="Drag &amp; Drop CV" TextAlignment="Center"/>
+        <Button x:Name="btnUpload" Content="Upload" HorizontalAlignment="Left" Height="20" Margin="355,297,0,0" VerticalAlignment="Top" Width="67"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="26" Margin="440,406,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Click="returnToOptionWindow"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="525,406,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Click="returnToOptionWindow"/>
+        <TextBlock x:Name="txbRegDate" HorizontalAlignment="Left" Height="20" Margin="358,331,0,0" TextWrapping="Wrap" Text="Registration Date" VerticalAlignment="Top" Width="116"/>
+        <DatePicker x:Name="dateRegDate" HorizontalAlignment="Left" Height="26" Margin="479,328,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBlock x:Name="txbPickClient" HorizontalAlignment="Left" Height="20" Margin="60,44,0,0" TextWrapping="Wrap" Text="Pick A Client" VerticalAlignment="Top" Width="116"/>
+        <ComboBox x:Name="combobPickClient" HorizontalAlignment="Left" Height="20" Margin="181,44,0,0" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="49" Margin="60,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<!--w-->
+
+<Window x:Class="Charity2.OptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Charity2"
+        mc:Ignorable="d"
+        Title="OptionWindow" Height="500" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txbOptionChoice" HorizontalAlignment="Left" Margin="142,72,0,0" TextWrapping="Wrap" Text="Please choose one of the following options:" VerticalAlignment="Top" FontSize="20"/>
+
+        <Image x:Name="imgBackground" HorizontalAlignment="Left" Height="479" VerticalAlignment="Top" Width="821" Source="/Charity-job-opportunities-in-Belfast-300x200.jpg" Opacity="0.1" Margin="-3,6,0,0"/>
+        <Button x:Name="btnNewClient" Content="Add New Client" HorizontalAlignment="Left" Margin="142,146,0,0" VerticalAlignment="Top" FontSize="16" Click="AddClient" Width="123"/>
+        <Button x:Name="btnNewOrganisation" Content="Add New Organisation" HorizontalAlignment="Left" Margin="142,187,0,0" VerticalAlignment="Top" FontSize="16" Click="GoToOrganisation"/>
+        <Button x:Name="btnNewVacancy" Content="Add New Vacancy" HorizontalAlignment="Left" Margin="142,0,0,0" VerticalAlignment="Center" FontSize="16" Click="GoToNewVac" Width="142"/>
+        <Button x:Name="btnEditClient" Content="Edit Client" HorizontalAlignment="Left" Margin="450,146,0,0" VerticalAlignment="Top" FontSize="16" Click="GoEditClient"/>
+        <Button x:Name="btnEditOrganisation" Content="Edit Organisation" HorizontalAlignment="Left" Margin="400,187,0,0" VerticalAlignment="Top" FontSize="16" Click="GoToEditOrg"/>
+        <Button x:Name="btnEditVacancy" Content="Edit Vacancy" HorizontalAlignment="Left" Margin="434,0,0,0" VerticalAlignment="Center" FontSize="16" Click="GoToEditVacancy"/>
+        <Button x:Name="btnMatching" Content="Match Client with Vacancy" HorizontalAlignment="Left" Margin="206,280,0,0" VerticalAlignment="Top" FontSize="22" Click="MatchClient"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="316,379,0,0" VerticalAlignment="Top" FontSize="22" Click="Exit"/>
+        <Button x:Name="btnInterviews" Content="View Interview List" HorizontalAlignment="Left" Margin="245,330,0,0" VerticalAlignment="Top" FontSize="22" Click="Interview"/>
+
+    </Grid>
+</Window>

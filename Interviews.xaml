@@ -1,0 +1,26 @@
+﻿<Window x:Class="Charity2.Interviews"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Charity2"
+        mc:Ignorable="d"
+        Title="Interviews" Height="400" Width="800">
+    <Grid>
+        <Image x:Name="imgBackground" HorizontalAlignment="Center" Height="548" VerticalAlignment="Top" Width="800" Source="/Charity-job-opportunities-in-Belfast-300x200.jpg" Opacity="0.1" Margin="0,-40,0,0"/>
+
+        <TextBlock x:Name="txbInterviews" HorizontalAlignment="Left" Margin="51,27,0,0" TextWrapping="Wrap" Text="Interviews" VerticalAlignment="Top" FontSize="20" Width="306"/>
+        <TextBlock x:Name="txbPickDate" HorizontalAlignment="Left" Height="20" Margin="52,232,0,0" TextWrapping="Wrap" Text="Set Interview Date" VerticalAlignment="Top" Width="102"/>
+        <TextBlock x:Name="txbFinalList" HorizontalAlignment="Left" Height="20" Margin="51,63,0,0" TextWrapping="Wrap" Text="Shortlist Of Clients Who are Awaiting Interviews" VerticalAlignment="Top" Width="271"/>
+        <ListBox x:Name="lstbFinalList" HorizontalAlignment="Left" Height="99" Margin="51,86,0,0" VerticalAlignment="Top" Width="305" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DatePicker HorizontalAlignment="Left" Height="25" Margin="243,227,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="btnEmailClient" Content="Email Client" HorizontalAlignment="Left" Height="28" Margin="51,320,0,0" VerticalAlignment="Top" Width="124" Click="SendEmail"/>
+        <Button x:Name="btnEmailOrg" Content="Email Organisation" HorizontalAlignment="Left" Height="28" Margin="232,320,0,0" VerticalAlignment="Top" Width="124" Click="SendEmail"/>
+        <TextBlock x:Name="txbPickTime" HorizontalAlignment="Left" Height="20" Margin="52,260,0,0" TextWrapping="Wrap" Text="Set Interview Time" VerticalAlignment="Top" Width="102"/>
+        <ListBox x:Name="lstbInterviewList" HorizontalAlignment="Left" Height="191" Margin="447,86,0,0" VerticalAlignment="Top" Width="305" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBlock x:Name="txbFinalList_Copy" HorizontalAlignment="Left" Height="20" Margin="447,60,0,0" TextWrapping="Wrap" Text="Interview List" VerticalAlignment="Top" Width="271"/>
+        <TextBox x:Name="txtIntTime" HorizontalAlignment="Left" Height="25" Margin="243,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="25" Margin="685,323,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Click="returnToOptionWindow"/>
+
+    </Grid>
+</Window>

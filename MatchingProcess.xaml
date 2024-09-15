@@ -1,0 +1,31 @@
+﻿<Window x:Class="Charity2.MatchingProcess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Charity2"
+        mc:Ignorable="d"
+        Title="MatchingProcess" Height="350" Width="900">
+    <Grid>
+        <Image x:Name="imgBackground" HorizontalAlignment="Center" Height="589" VerticalAlignment="Top" Width="900" Source="/Charity-job-opportunities-in-Belfast-300x200.jpg" Opacity="0.1" Margin="0,-81,0,0"/>
+        <TextBlock x:Name="txbMatch" HorizontalAlignment="Left" Margin="50,10,0,0" TextWrapping="Wrap" Text="Matching Process" VerticalAlignment="Top" FontSize="20" Width="306"/>
+        <TextBlock x:Name="txbVacancyOrg" HorizontalAlignment="Left" Height="20" Margin="51,86,0,0" TextWrapping="Wrap" Text="Pick An Organisation" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="25" Margin="808,258,0,0" VerticalAlignment="Top" Width="67" FontSize="16" Click="returnToOptionWindow"/>
+        <ComboBox x:Name="combobOrg" HorizontalAlignment="Left" Height="25" Margin="204,84,0,0" VerticalAlignment="Top" Width="152" ItemsSource="{Binding organisations}" IsEditable="True"/>
+        <TextBlock x:Name="txbFinalList" HorizontalAlignment="Left" Height="20" Margin="475,161,0,0" TextWrapping="Wrap" Text="Final Shortlist" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="txbPostCode" HorizontalAlignment="Left" Height="20" Margin="50,438,0,0" TextWrapping="Wrap" Text="Postal Code" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="txtPostCode" HorizontalAlignment="Left" Height="25" Margin="202,435,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <TextBlock x:Name="txbEditVacancy1" HorizontalAlignment="Left" Height="20" Margin="51,46,0,0" TextWrapping="Wrap" Text="Pick A Vacancy" VerticalAlignment="Top" Width="116"/>
+        <ComboBox x:Name="combobEditVacancy" HorizontalAlignment="Left" Height="25" Margin="203,43,0,0" VerticalAlignment="Top" Width="153" ItemsSource="{Binding vacancies}" IsEditable="True"/>
+        <Button x:Name="btnMatch" Content="Match Vacancy with Potential Clients" HorizontalAlignment="Left" Height="28" Margin="90,124,0,0" VerticalAlignment="Top" Width="226" Click="btnMatch_Click"/>
+        <TextBlock x:Name="txbShortlist_from_system" HorizontalAlignment="Left" Height="20" Margin="50,164,0,0" TextWrapping="Wrap" Text="System Shortlist" VerticalAlignment="Top" Width="116"/>
+        <ListBox x:Name="lstbPotentialClients" HorizontalAlignment="Left" Height="99" Margin="51,184,0,0" VerticalAlignment="Top" Width="305" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListBox x:Name="lstbFinalList" HorizontalAlignment="Left" Height="99" Margin="475,184,0,0" VerticalAlignment="Top" Width="305" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="btnGoToInterviewPage" Content="Go To Interview Page" HorizontalAlignment="Left" Height="28" Margin="656,65,0,0" VerticalAlignment="Top" Width="124" Click="Interview"/>
+        <Button x:Name="btnEmailClient" Content="Email Client" HorizontalAlignment="Left" Height="28" Margin="475,46,0,0" VerticalAlignment="Top" Width="124" Click="SendEmail"/>
+        <Button x:Name="btnEmailOrg" Content="Email Organisation" HorizontalAlignment="Left" Height="28" Margin="475,86,0,0" VerticalAlignment="Top" Width="124" Click="SendEmailOrg"/>
+        <Button x:Name="btnAddToFinal" Content="Add" HorizontalAlignment="Left" Height="28" Margin="399,200,0,0" VerticalAlignment="Top" Width="51" Click="AddToFinal"/>
+        <Button x:Name="btnRemove" Content="Remove" HorizontalAlignment="Left" Height="27" Margin="399,243,0,0" VerticalAlignment="Top" Width="51" Click="RemoveFinal"/>
+
+    </Grid>
+</Window>
