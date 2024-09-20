@@ -9,7 +9,7 @@ The objective of this assignment was to develop a comprehensive requirements spe
 ### Skills Learned
 
 -  Creating UML use case and activity diagrams.
--  Conducting a requirements analysis of the current systema and evaluating the problems.
+-  Conducting a requirements analysis of the current system and evaluating the problems.
 -  Defining functional and non-functional requirements.
 -  Researching systems lifecycles and what approach can be used in this scenario.
 
@@ -30,7 +30,7 @@ The objective of this assignment was to develop a comprehensive requirements spe
 # Assignment 2:
 
 ## Objective
-The objective was to advance the design and prototyping of a priority aspect of the Employment Help Charity's information system, building on the analysis completed in Assignment 1. This involves creating a detailed UML Class Diagram for the identified priority system component, implementing a prototype user interface using WPF in C# to demonstrate its "look and feel," and testing the interface with an Event Action Test Table. Additionally, the assignment requires developing a Misuse Case Diagram to identify potential security threats and propose mitigations. The aim is to provide a practical, initial prototype of the system while addressing key design, functionality, and security considerations.
+The objective was to advance the design and prototyping of a priority aspect of the Employment Help Charity's information system, building on the analysis completed in Assignment 1. This involves creating a detailed UML Class Diagram for the identified priority system component, implementing a prototype user interface using WPF in C# to demonstrate its "look and feel," and testing the interface with an Event Action Test Table. Additionally, the assignment required developing a Misuse Case Diagram to identify potential security threats and propose mitigations. The aim is to provide a practical, initial prototype of the system while addressing key design, functionality, and security considerations.
 
 ### Skills Learned
 
